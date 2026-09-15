@@ -1,6 +1,8 @@
 #setup
 import random
 
+newq = 5
+
 def teachermode():
     global newq
     print("Hi! Welcome to Teacher Mode!")
@@ -46,9 +48,14 @@ def studentmode():
         #this if will be removed soon, this is just for testing
         if student_answer == "force":
             exec(f"global student_answer, n1, n2, op_type; student_answer = {n1} {op_type} {n2}")
+        student_answer = int(student_answer)
         if student_answer == answer:
             print(f"Correct! {random.choices([':D', ':)', ';)', ';D'])}")
+            questions_right = questions_right + 1
         else:
-            print("wrong!")
+            print(f"Wrong! {random.choices([':X', ':(', '>:(', '>:X'])}")
+            print(f"The correct answer was {answer}!")
+            questions_wrong = questions_wrong + 1
+    print(f"OVERVIEW:\nYou got {questions_right} questions correct\nYou got {questions_wrong} questions wrong.\nQuiz Score: {(questions_right / newq) * 100}%")
 studentmode()
 input()
