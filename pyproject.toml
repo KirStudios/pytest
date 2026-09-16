@@ -1,0 +1,23 @@
+[project]
+name = "Kirtest"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Aditya Pratap Singh Rathore", email = "247943295+aditya-jodha@users.noreply.github.com" },
+]
+requires-python = ">=3.14"
+dependencies = []
+
+[project.scripts]
+kirtest = "Kirtest.__main__:main"
+
+[project.urls]
+Homepage = "https://github.com/KirStudios/pytest"
+
+[build-system]
+requires = ["uv_build>=0.12.13,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = ["ruff>=0.16.7"]
