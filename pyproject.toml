@@ -1,0 +1,64 @@
+[project]
+name = "kirtest"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Aditya Pratap Singh Rathore", email = "247943295+aditya-jodha@users.noreply.github.com" },
+]
+requires-python = ">=3.14"
+dependencies = []
+
+[project.scripts]
+kirtest = "kirtest.__main__:main"
+
+[project.urls]
+Homepage = "https://github.com/KirStudios/pytest"
+
+[build-system]
+requires = ["uv_build>=0.12.13,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = ["ruff>=0.16.7"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = [
+    "ARG",
+    "B",
+    "BLE",
+    "C4",
+    "DTZ",
+    "E",
+    "F",
+    "FA",
+    "FURB",
+    "I",
+    "N",
+    "NPY",
+    "PD",
+    "PERF",
+    "PLC",
+    "PLE",
+    "PTH",
+    "RET",
+    "RUF",
+    "S",
+    "SIM",
+    "TC",
+    "TID",
+    "TRY",
+    "UP",
+    "W",
+    "YTT",
+]
+
+[tool.ruff.format]
+docstring-code-format = true
+
+[tool.ruff.lint.pycodestyle]
+# Avoids triggering E501 on task comments (like TODO, FIXME)
+ignore-overlong-task-comments = true
