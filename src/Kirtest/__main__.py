@@ -1,4 +1,4 @@
-from Kirtest.core.discovery import Discovery
+from kirtest.core.discovery import Discovery
 
 
 def main():
