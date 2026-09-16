@@ -5,6 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 authors = [
     { name = "Aditya Pratap Singh Rathore", email = "247943295+aditya-jodha@users.noreply.github.com" },
+    { name = "Davion56Gaming (Kir Studios)", email = "kirstudios12@gmail.com" }
 ]
 requires-python = ">=3.14"
 dependencies = []
