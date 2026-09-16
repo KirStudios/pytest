@@ -1,9 +1,11 @@
-from types import FunctionType
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Annotated
+from typing import TYPE_CHECKING, Annotated
 
-from .config.config import TESTS
+from kirtest.core.config.config import TESTS
+
+if TYPE_CHECKING:
+    from types import FunctionType
 
 
 @dataclass
